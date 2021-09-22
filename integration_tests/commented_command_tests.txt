@@ -1,0 +1,19 @@
+echo "Testing the shell with commented commands"
+echo #This should not be showing up
+echo Hello #This
+echo World #is
+echo How #a
+echo Is #comment
+echo The #and
+echo Weather #should
+echo Today #not
+echo In #be
+echo Nice #showing
+echo And #up
+echo Sunny #at
+echo Summer #all
+echo Riverside #on
+echo ? #screen
+echo #Neither should this
+echo "Exiting the program"
+exit

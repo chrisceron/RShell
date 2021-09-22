@@ -1,0 +1,30 @@
+echo "Testing shell with symbolic test command."
+echo "See if multiple_commands_tests.sh exists w/o -e. Should return true."
+[ multiple_commands_tests.sh ] && echo Path Exists || echo No Path
+echo
+echo "See if fake.txt exists w/o -e. Should return false."
+[ fake.txt ] && echo Path Exists || echo No Path
+echo
+echo "Look for fake file. Should return false"
+[ -f fake ] && echo Path Exists || echo No Path
+echo 
+echo "Look for multiple_commands_test.txt file. Should return true."
+[ -f multiple_commands_test.txt ] && echo Path Exists || echo No Path
+echo
+echo "Look for header directory by going back 1 directory. Should return true."
+[ -d ../header ] && echo Path Exists || echo No Path
+echo
+echo "Look for local fake directory. This should return false."
+[ -d fake ] && echo Path Exists || echo No Path
+echo
+echo "See if fake exists with -e. Should return false."
+[ -e fake ] && echo Path Exists || echo No Path
+echo
+echo "See if test_literal_tests.txt exists with -e. Should return true."
+[ -e test_literal_tests.txt ] && echo Path Exists || echo No Path
+echo
+echo "Several tests with connectors. True false true true."
+[ -e test_literal_tests.txt ] && [ -f fake ] || [ -d ../unit_tests ]; [ test ../rshell ]
+echo
+echo "Exiting..."
+exit

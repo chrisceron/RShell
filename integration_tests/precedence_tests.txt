@@ -1,0 +1,9 @@
+echo "Testing the shell with precedence operators"
+echo "Test1: A B"
+(echo A && echo B) || (echo C && echo D)
+echo
+echo "Test2: A fail D"
+(echo A || echo B) && (ech C || echo D)
+echo
+echo "Exiting..."
+exit

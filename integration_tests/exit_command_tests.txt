@@ -1,0 +1,9 @@
+echo "Testing the exit function"
+echo
+echo "The program should not exit yet"
+echo
+echo "The program should still be running #exit"
+echo
+echo "This program will exit in " && echo "5" && echo "4" && echo "3" && echo "2" && echo "1" && exit
+echo
+echo "This program should not be running still"

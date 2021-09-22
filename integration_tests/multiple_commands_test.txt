@@ -1,0 +1,17 @@
+echo "Testing the shell with multiple commands"
+echo
+echo "Testing the And function with: echo Hello && echo World"
+echo Hello && echo World
+echo
+echo "Testing the Or function with Hello or eeecho World"
+echo Hello || eeecho World
+echo
+echo "Testing the Semicolon function with Hello sc World sc Please"
+echo Hello; echo World; echo Please
+echo
+echo "Testing the functions in combination"
+echo
+ls; echo "Added testDir" && mkdir testDir && ls;  rmdir testDir && echo "Removed testDir" || echo Hello
+echo
+echo "Exiting the program"
+exit

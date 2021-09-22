@@ -1,0 +1,21 @@
+echo "Testing the shell with single commands"
+echo
+echo "Using ls to show current directories"
+ls
+echo
+echo "Making new directory testDir"
+mkdir testDir
+echo
+echo "Using ls to show that the new directory was made"
+ls
+echo
+echo "Deleting the newly created testDir"
+rmdir testDir
+echo "Using ls again to show that the new directory was removed"
+ls
+echo
+echo "This should result in an error"
+lssssssssss
+echo 
+echo "Exiting the program"
+exit
