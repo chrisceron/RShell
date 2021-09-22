@@ -1,8 +1,9 @@
-# CS 100 Assignment 1 - RShell
+# CS 100 - RShell
 Summer A01 2019
+Chris Ceron SID: 862091143
 Edmund Hwang SID:860931903
 Isaac Gallegos SID: 861237839
-Chris Ceron SID: 862091143
+
 
 # Introduction
 
